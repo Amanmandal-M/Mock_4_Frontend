@@ -8,7 +8,43 @@
     <title>Dashboard</title>
 </head>
 <body>
-    
+    <div id="AppointmentForm">
+        <form>
+            <input type="text" class="name">
+            <input type="text" class="imgUrl">
+            <select class="specialization">
+                <option value="Cardiologist">Cardiologist</option>
+                <option value="Dermatologist">Dermatologist</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Psychiatrist ">Psychiatrist </option>
+            </select>
+            <input type="text" class="experience">
+            <input type="text" class="">
+            <input type="date" class="date">
+            <select class="slots">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </form>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <td>Name of the Doctor</td>
+                <td>Specialization</td>
+                <td>experience</td>
+                <td>location</td>
+                <td>slots</td>
+                <td>Edit</td>
+                <td>Delete</td>
+                <td>Appointments</td>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Append All Datas Here -->
+        </tbody>
+    </table>
 </body>
 </html>
 <script src="../scripts/dashboard.js"></script>
