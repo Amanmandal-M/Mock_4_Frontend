@@ -8,34 +8,36 @@
     <title>Homepage</title>
   </head>
   <body>
-     <div id="mainContainer">
-        <div class="smallContainer">
-          <div>Login</div>
-          <div>Register</div>
+    <nav>
+      <a href="index.html">Homepage</a>
+      <a href="./html/dashboard.html">Dashboard Page</a>
+      <a href="./html/appointment.html">Appointment</a>
+    </nav>
 
-          <!-- Login Section -->
-          <div class="loginSection">
-              <form>
-                <input type="email" placeholder="email" required>
-                <input type="password" placeholder="Password" required>
-                <input type="submit" value="Login">
-              </form>
-          </div>
+    <div id="mainContainer">
+      <div class="smallContainer">
+        <div class="login">Login</div>
+        <div class="register">Register</div>
+      </div>
 
-          <!-- Register Section -->
-          <div class="registerSection" style="display: none;">
-            <form>
-              <input type="text" placeholder="Username" required>
-              <input type="email" placeholder="email" required>
-              <input type="password" placeholder="Password" required>
-              <input type="password" placeholder="Repeat Password" required>
-              <label>Are You a Doctor ?</label>
-              <input type="checkbox"  id="isDoctor">
-              <input type="submit" value="Register">
-            </form>
-        </div>
-        </div>
-     </div>
+      <!-- Login Section -->
+      <div class="loginSection">
+          <input type="email" placeholder="email" class="LoginEmail" required />
+          <input type="password" placeholder="Password" class="LoginPass" required />
+          <button class="LoginButton">Login</button>
+      </div>
+
+      <!-- Register Section -->
+      <div class="registerSection" style="display: none">
+          <input type="text" class="username" placeholder="Username" required />
+          <input type="email" class="email" placeholder="email" required />
+          <input type="password"  placeholder="Password" required />
+          <input type="password" class="password" placeholder="Repeat Password" required />
+          <label>Are You a Doctor ?</label>
+          <input type="checkbox" class="isDoctor"/>
+          <button class="RegisterButton">Register</button>
+      </div>
+    </div>
   </body>
 </html>
 <script src="./scripts/index.js"></script>
