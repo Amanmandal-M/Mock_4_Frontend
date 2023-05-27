@@ -41,6 +41,7 @@
             <select class="fee">
                 <option value="">Select Fee</option>
                 <option value="100">100</option>
+                <option value="150">150</option>
                 <option value="500">500</option>
                 <option value="2000">2000</option>
                 <option value="3000">3000</option>
@@ -66,6 +67,47 @@
             <!-- Append All Data Here -->
         </tbody>
     </table>
+
+
+    <!-- Modal -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Appointment Form</h2>
+            <div>
+                <input type="text" class="nameModal" placeholder="Enter name of the Doctor">
+                <input type="url" class="imgUrlModal" placeholder="Enter your image link">
+                <select class="specializationModal">
+                    <option value="">Select Specialization</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                    <option value="Dermatologist">Dermatologist</option>
+                    <option value="Pediatrician">Pediatrician</option>
+                    <option value="Psychiatrist">Psychiatrist</option>
+                </select>
+                <input type="number" class="experienceModal" placeholder="Enter your experience">
+                <input type="text" class="locationModal" placeholder="Enter your location">
+                <input type="date" class="dateModal">
+                <select class="slotsModal">
+                    <option value="">Select Slots</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <select class="feeModal">
+                    <option value="">Select Fee</option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                    <option value="500">500</option>
+                    <option value="2000">2000</option>
+                    <option value="3000">3000</option>
+                </select>
+                <button class="submitModal">Submit Appointment</button>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
