@@ -7,6 +7,11 @@ const names = document.querySelector('.name');
 const imageUrl = document.querySelector('.imgUrl');
 const specialization = document.querySelector('.specialization');
 const fees = document.querySelector('.fee');
+const experience = document.querySelector('.experience');
+const locationData = document.querySelector('.location');
+const date = document.querySelector('.date');
+const slots = document.querySelector('.slots');
+
 
 const tableBody = document.querySelector('tbody');
 const submitButton = document.querySelector('.submit');
