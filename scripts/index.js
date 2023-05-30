@@ -1,12 +1,16 @@
 const baseUrl = "https://mock4jsonserver.up.railway.app";
 const usersUrl = `${baseUrl}/users`;
 
+const mainContainer = document.querySelector('#mainContainer');
+
 // Login data
 const loginButton = document.querySelector(".login");
 const loginSection = document.querySelector(".loginSection");
 const LoginSubmitButton = document.querySelector(".LoginButton");
 const LoginEmail = document.querySelector('.LoginEmail');
 const LoginPassword = document.querySelector('.LoginPass');
+const backgroundChangeLogin = document.querySelector('.login');
+
 
 // Signup data
 const registerButton = document.querySelector(".register");
@@ -21,11 +25,16 @@ const isDoctor = document.querySelector(".isDoctor");
 loginButton.addEventListener("click", () => {
   loginSection.style.display = "block";
   registerSection.style.display = "none";
+  registerButton.style.background = "white";
+  mainContainer.style.background = "#1e1212bf";
+  backgroundChangeLogin.style.background="rgb(88 76 76 / 75%)"
 });
 
 registerButton.addEventListener("click", () => {
   loginSection.style.display = "none";
   registerSection.style.display = "block";
+  registerButton.style.background = "rgb(88 76 76 / 75%)";
+  backgroundChangeLogin.style.background="white"
 });
 
 // Register Section
@@ -37,6 +46,9 @@ RegisterSubmitButton.addEventListener("click", (e) => {
     Password: password.value,
     DoctorCheck: isDoctor.checked,
   };
+
+  if(username.value==""||Email.value==""||Password.value==""||DoctorCheck.value=="") return alert("Please enter your credentials");
+
   signUp(data);
 });
 
@@ -58,6 +70,9 @@ const signUp = async (data) => {
 // Login Section
 LoginSubmitButton.addEventListener("click", (e) => {
   e.preventDefault();
+
+  if(LoginEmail.value=="" || LoginPassword.value=="") return alert("Please enter your credentials first");
+
   LoginCheck();
 });
 

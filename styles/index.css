@@ -26,7 +26,74 @@ nav a:hover {
 
 #mainContainer {
     width: 40%;
-    border: 1px solid red;
-    height: 200px;
+    height: auto;
     margin: auto;
+    background-color: #1e1212bf;
+}
+
+.smallContainer{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+.login{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(88 76 76 / 75%);
+}
+
+.register{
+    width: 50%;
+    background-color: white;
+}
+
+.loginSection{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+input{
+    width: 93%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+input:nth-child(1){
+    margin-top: 10px;
+}
+
+.LoginButton , .RegisterButton{
+    width: 30%;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+
+.registerSection{
+    text-align: center;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    bottom: 19px;
+    left: 120px;
+    cursor: pointer;
+    
 }
